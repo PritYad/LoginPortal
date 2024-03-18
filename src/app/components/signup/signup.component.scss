@@ -1,0 +1,36 @@
+.login-form {
+    padding: 80px;
+    width: 420px;
+    background: white;
+}
+
+.label {
+  padding-bottom: var(--mq-space-base);
+  color: #978886;
+}
+
+.links {
+    text-decoration: none;
+    color: #546e7a;
+    line-height: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button {
+  padding: var(--mq-space-small);
+  border-radius: var(--mq-space-base);
+  background: black;
+  width: 100%;
+  color: white;
+  font-size: var(--mq-space-small);
+}
+
+.error {
+  color: red;
+  font-weight: 400;
+  //background: #fbd1d8;
+  padding-left: 8px;
+  margin-bottom: 24px;
+  padding: var(--mq-space-small);
+}

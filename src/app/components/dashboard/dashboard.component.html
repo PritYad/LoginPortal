@@ -1,0 +1,10 @@
+<div class="details">
+  <div><a (click)="signOut()" class="pull-right text-primary"><strong>Sign Out</strong></a></div>
+  <div class="heading-32 text-center mq-padding-medium-vertical">Welcome</div>
+  <div *ngFor="let article of articles$ | async;  let i = index">
+    @if (i === 0) {
+    <div>Below are the following articles names:</div>
+    }
+    {{article}}
+  </div>
+</div>

@@ -1,0 +1,43 @@
+<div class="login-form">
+  <div class="heading-32 text-center mq-margin-medium-bottom">Sign Up</div>
+
+  @if (errorMessage) {
+  <div class="error" [displayError]="errorMessage"></div>
+  }
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <mq-input
+      name="username"
+      [fg]="form"
+      type="text"
+      label="Username"
+      placeholder="Enter username"
+    ></mq-input>
+    <mq-input
+      name="password"
+      [fg]="form"
+      type="password"
+      label="Password"
+      placeholder="Enter password"
+    ></mq-input>
+    <mq-input
+      name="email"
+      [fg]="form"
+      type="email"
+      label="Email"
+      placeholder="E-mail address"
+    ></mq-input>
+    <div>
+      <button class="button" type="submit">
+        <div>
+          @if (isLoading) {
+          <i class="fa fa-spinner fa-spin mq-padding-base-horizontal"> </i>
+          }
+          <span>Sign up</span>
+        </div>
+      </button>
+    </div>
+  </form>
+  <div class="mq-margin-medium-vertical text-center">
+    Already, have an account? <a class="links" routerLink="/login">Sign In</a>
+  </div>
+</div>

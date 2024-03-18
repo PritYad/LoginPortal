@@ -1,0 +1,9 @@
+@import './app/shared/styles/spacing.scss';
+@import './app/shared/styles/mixin.scss';
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+}
